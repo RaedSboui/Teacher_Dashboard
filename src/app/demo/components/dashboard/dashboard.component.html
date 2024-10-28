@@ -1,0 +1,26 @@
+    <div class="grid">
+        
+        <ng-container *ngIf="loading; else dataLoaded">
+            <p-progressSpinner [style]="{width: '50px', height: '50px'}" />
+        </ng-container>
+        
+        <ng-template #dataLoaded>
+            <div class="col-12 xl:col-12">
+                <app-progress-bar [value]="progressValue"></app-progress-bar>
+            </div>
+
+            <div class="col-12 xl:col-12">
+                
+            </div>
+            <div class="col-12 xl:col-6">
+                <app-doughnut-chart [chartData]="quizData" [title]="'Répartition des Quiz'"></app-doughnut-chart>
+            </div>
+            <div class="col-12 xl:col-6">
+                <app-doughnut-chart [chartData]="documentData" [title]="'Distribution des Documents'"></app-doughnut-chart>
+            </div>
+            <div class="col-12 xl:col-12">
+                <app-skills-list [skills]="skills"></app-skills-list>
+            </div>
+        </ng-template>
+    </div>
+

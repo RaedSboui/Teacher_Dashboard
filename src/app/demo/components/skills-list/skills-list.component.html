@@ -1,0 +1,18 @@
+<div>
+    <p-accordion class="inline-accordion">
+        <p-accordionTab *ngIf="skills.topTested && skills.topTested.length > 0"  [headerStyle]="{ color: '#510099' }" header="Compétences Validées">
+            <ul>
+              <li *ngFor="let skill of skills.topTested | slice:0:5">
+                {{ skill }}
+               </li>
+            </ul>
+        </p-accordionTab>
+        <p-accordionTab *ngIf="skills.toImprove && skills.toImprove.length > 0" [headerStyle]="{ color: '#510099' }" header="Compétences à Améliorer">
+            <ul>
+                <li *ngFor="let skill of skills.toImprove | slice:0:5">
+                  {{ skill }}
+                </li>
+            </ul>
+       </p-accordionTab>
+    </p-accordion>
+</div>

@@ -1,0 +1,34 @@
+{
+  "period": "2024-10",
+  "quiz": {
+    "total_generated": 120,
+    "total_published": 80,
+    "total_draft": 40,
+    "students_passed": 300
+  },
+  "document": {
+    "total_created": 50,
+    "total_exercises_generated": 25,
+    "total_published": 30
+  },
+  "token": {
+    "total": 1000,
+    "consumed": 750
+  },
+  "competence": {
+    "top_tested_knowledge": [
+      "Algèbre",
+      "Analyse",
+      "Programmation",
+      "Physique",
+      "Chimie"
+    ],
+    "top_knowledge_to_improve": [
+      "Résolution de problèmes",
+      "Algorithmes",
+      "Conception de bases de données",
+      "Programmation orientée objet",
+      "Statistiques"
+    ]
+  }
+}
