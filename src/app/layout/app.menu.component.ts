@@ -4,7 +4,8 @@ import { LayoutService } from './service/app.layout.service';
 
 @Component({
     selector: 'app-menu',
-    templateUrl: './app.menu.component.html'
+    templateUrl: './app.menu.component.html',
+    styleUrl: './app.menu.component.scss'
 })
 export class AppMenuComponent implements OnInit {
     model: any[] = [];
@@ -20,14 +21,15 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
-                label: 'Auth',
+                label: 'Services',
+                color: 'red',
                 items: [
                     {
                         label: 'Cours',
                         icon: 'pi pi-book',
                         items: [
                             {
-                                label: 'Algèbre",',
+                                label: 'Algèbre',
                                 icon: 'pi pi-calculator',
                                 routerLink: ['/']
                             },
