@@ -25,8 +25,10 @@ export class DoughnutChartComponent {
       title: {
         display: true,
         text: '',
+        position: 'bottom',
         color: '#0B3C6A',
         font: {
+          size: '14px',
           weight: 'bold',
         },
       },

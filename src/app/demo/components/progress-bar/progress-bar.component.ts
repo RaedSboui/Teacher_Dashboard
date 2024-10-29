@@ -11,10 +11,5 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule, ProgressBarModule]
 })
 export class ProgressBarComponent {
-
   @Input() value: number = 0; 
-
-  get progressValue(): number {
-    return this.value;
-  }
 }

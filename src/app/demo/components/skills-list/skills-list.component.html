@@ -1,5 +1,5 @@
 <div>
-    <p-accordion class="inline-accordion">
+    <p-accordion class="inline-accordion" [activeIndex]="0">
         <p-accordionTab *ngIf="skills.topTested && skills.topTested.length > 0"  [headerStyle]="{ color: '#510099', border: 'none' }" header="Compétences Validées">
             <ul>
               <li *ngFor="let skill of skills.topTested | slice:0:5">

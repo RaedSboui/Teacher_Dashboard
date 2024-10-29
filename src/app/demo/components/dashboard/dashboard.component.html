@@ -5,20 +5,20 @@
         </ng-container>
         
         <ng-template #dataLoaded>
-            <div class="col-12 xl:col-12">
+            
+            <div class="col-12 xl:col-12 mb-4">
                 <app-progress-bar [value]="progressValue"></app-progress-bar>
             </div>
 
-            <div class="col-12 xl:col-12">
-                
-            </div>
-            <div class="col-12 xl:col-6">
+            <div class="col-12 xl:col-4 mt-4">
                 <app-doughnut-chart [chartData]="quizData" [title]="'Répartition des Quiz'"></app-doughnut-chart>
             </div>
-            <div class="col-12 xl:col-6">
+
+            <div class="col-12 xl:col-4 mt-4">
                 <app-doughnut-chart [chartData]="documentData" [title]="'Distribution des Documents'"></app-doughnut-chart>
             </div>
-            <div class="col-12 xl:col-6">
+
+            <div class="col-12 xl:col-4 mt-4">
                 <app-skills-list [skills]="skills"></app-skills-list>
             </div>
         </ng-template>

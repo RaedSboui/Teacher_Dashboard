@@ -14,9 +14,4 @@ import { CommonModule } from '@angular/common';
 })
 export class SkillsListComponent {
   @Input() skills: Skills;
-
-  get skillsAL(): Skills {
-    console.log("skills :" + this.skills)
-    return this.skills;
-  }
 }
